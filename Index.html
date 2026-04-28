@@ -15,7 +15,7 @@
     <div class="container">
       <!-- Identidad del sitio -->
       <a class="navbar-brand" href="#">Confetti sweet</a>
-      <!-- Mennu de hamburguesa -->
+      <!-- Menú de hamburguesa -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Productos</a>
@@ -40,7 +40,7 @@
           </li>
           <li class="nav-item ms-3" id="authbuttons">
 
-            <button class="btn btn custom-btn-sm" onclick="showLoginModal()">Iniciar Sesión</button>
+            <button class="btn custom-btn-sm" onclick="showLoginModal()">Iniciar Sesión</button>
 
           </li>
 
@@ -49,24 +49,24 @@
     </div>
   </nav>
 
-  <!-- Esta es la seccion donde se van a visualizar los productos  -->
+  <!-- Esta es la sección donde se van a visualizar los productos  -->
   <section>
     <div class="container">
       <div class="row" id="product-list">
-        <h2 class="display-4 fw'blod md-3" style="color:var(dark-pinkk);">Nuestros Productos</h2>
+        <h2 class="display-4 fw-bold mb-3" style="color:#ff69b4;">Nuestros Productos</h2>
         <p class="lead text-muted">Descubre nuestra selección de dulces</p>
       </div>
       <!-- Categorias de productos  -->
-      <div class="d-flex justify-content-center grap-3 mb-5 flex-wrap">
+      <div class="d-flex justify-content-center gap-3 mb-5 flex-wrap">
         <button class="btn btn-outline-primary-custom active" onclick="filterProducts('all')">Todas</button>
         <button class="btn btn-outline-primary-custom active"
-          onclick="filterProducts('decoracionres')">Decoraciones</button>
+          onclick="filterProducts('decoraciones')">Decoraciones</button>
         <button class="btn btn-outline-primary-custom active" onclick="filterProducts('bocadillos')">Bocadillos</button>
         <button class="btn btn-outline-primary-custom active" onclick="filterProducts('paquetes')">Paquetes</button>
 
       </div>
-      <!-- Reenderizado de productos -->
-      <div class="row gap-4" id="product-list">
+      <!-- Renderizado de productos -->
+      <div class="row gap-4" id="product-container">
         <!-- Dentro de este div se van a renderizar los productos de forma dinamica  -->
 
 
@@ -74,64 +74,63 @@
 
     </div>
   </section>
-  <!-- End de la seccion de productos -->
+  <!-- Fin de la sección de productos -->
 
-  <!-- Inicia la seccion de reservaciones  -->
+  <!-- Inicia la sección de reservaciones  -->
   <section id="reservas" class="py-5 my-5 bg-white">
     <div class="container">
-      <div class="col-lg-5 mb-4 mb-lg-0">
-        <h2 class="display-5 fw-blod mb-4" style="color:pink;">Programa tu cita </h2>
-        <p>Asegura tu fecha especial con anticipación. Nuestro calendario en tiempo real te muestra la disponibilidad
-          instantanea</p>
+      <div class="row">
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <h2 class="display-5 fw-bold mb-4" style="color:pink;">Programa tu cita </h2>
+          <p>Asegura tu fecha especial con anticipación. Nuestro calendario en tiempo real te muestra la disponibilidad
+            instantánea</p>
 
-        <div class="d-flex flex-column gap-3">
+          <div class="d-flex flex-column gap-3">
 
-          <div class="d-flex align-items-center gap-3 p-3 rounded">
-            <i class="bi bi-check-circle-fill" style="color: pink;"></i>
-            <div>
-              <h6 class="mb-0 fw-blod">Confirmacion inmediata</h6>
-              <small class="text-muted">Recibe confirmación al instante</small>
+            <div class="d-flex align-items-center gap-3 p-3 rounded">
+              <i class="bi bi-check-circle-fill" style="color: pink;"></i>
+              <div>
+                <h6 class="mb-0 fw-bold">Confirmación inmediata</h6>
+                <small class="text-muted">Recibe confirmación al instante</small>
+              </div>
             </div>
-          </div>
-          <div class="d-flex align-items-center gap-3 p-3 rounded">
-            <i class="bi bi-cash-coin" style="color: pink;"></i>
-            <div>
-              <h6 class="mb-0 fw-blod">Pago seguro</h6>
-              <small class="text-muted">Multiples metodos de pago protegidos</small>
+            <div class="d-flex align-items-center gap-3 p-3 rounded">
+              <i class="bi bi-cash-coin" style="color: pink;"></i>
+              <div>
+                <h6 class="mb-0 fw-bold">Pago seguro</h6>
+                <small class="text-muted">Múltiples métodos de pago protegidos</small>
+              </div>
             </div>
-          </div>
-          <div class="d-flex align-items-center gap-3 p-3 rounded">
-            <i class="bi bi-house-add-fill" style="color: pink;"></i>
-            <div>
-              <h6 class="mb-0 fw-blod">Flexibilidad total</h6>
-              <small class="text-muted">Modifica tu reverva hasta en 46hrs</small>
+            <div class="d-flex align-items-center gap-3 p-3 rounded">
+              <i class="bi bi-house-add-fill" style="color: pink;"></i>
+              <div>
+                <h6 class="mb-0 fw-bold">Flexibilidad total</h6>
+                <small class="text-muted">Modifica tu reserva hasta en 46hrs</small>
+              </div>
             </div>
-          </div>
-
-        </div>
-      </div>
-
-
-      <div class="col-lg-7">
-        <div class="calendar-container">
-          <div class="calendar-header">
-            <button class="btn btn-sm btn-outline-secondary" onclick="changeMonth(-1)">
-              <i class="bi bi-chevron-left"></i>
-            </button>
-            <button>
-              <h4 class="mb-0 fw-blod" id="currentMonthYear">Abril 2026</h4>
-            </button>
-             <button class="btn btn-sm btn-outline-secondary" onclick="changeMonth(1)">
-              <i class="bi bi-chevron-right"></i>
-            </button>
-            
-          </div>
-          <div class="calendar-grid" id="calendarGrid">
 
           </div>
-          <div class="mt-4 d-flex gap-3 justify-content-center flex-wrap"></div>
         </div>
 
+
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <div class="calendar-container">
+            <div class="calendar-header">
+              <button class="btn btn-sm btn-outline-secondary" onclick="changeMonth(-1)">
+                <i class="bi bi-chevron-left"></i>
+              </button>
+              <button>
+                <h4 class="mb-0 fw-bold" id="currentMonthYear">Abril 2026</h4>
+              </button>
+              <button class="btn btn-sm btn-outline-secondary" onclick="changeMonth(1)">
+                <i class="bi bi-chevron-right"></i>
+              </button>
+        
+            </div>
+            <div class="calendar-grid" id="calendarGrid"></div>
+            <div class="mt-4 d-flex gap-3 justify-content-center flex-wrap"></div>
+          </div>
+        </div>
       </div>
 
     </div>
