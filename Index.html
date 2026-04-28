@@ -48,6 +48,56 @@
       </div>
     </div>
   </nav>
+      <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content fade-in">
+                    <h1 class="hero-title">Celebra Momentos Inolvidables</h1>
+                    <p class="hero-subtitle">
+                        Transformamos tus celebraciones en experiencias mágicas con nuestras decoraciones únicas 
+                        y deliciosos bocadillos. Cada detalle está pensado para crear recuerdos dulces que durarán para siempre.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <button class="btn btn-primary-custom" onclick="scrollToProducts()">
+                            <i class="bi bi-shop me-2"></i>Ver Productos
+                        </button>
+                        <button class="btn btn-outline-custom" onclick="showReservationModal()">
+                            <i class="bi bi-calendar-heart me-2"></i>Reservar Ahora
+                        </button>
+                    </div>
+                    <div class="mt-5 d-flex gap-4">
+                        <div class="text-center">
+                            <h3 class="fw-bold text-pink">500+</h3>
+                            <small class="text-muted">Eventos Decorados</small>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="fw-bold text-pink">1000+</h3>
+                            <small class="text-muted">Clientes Felices</small>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="fw-bold text-pink">50+</h3>
+                            <small class="text-muted">Diseños Únicos</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 position-relative">
+                    <div class="text-center position-relative">
+                        <div style="width: 100%; height: 500px; background: linear-gradient(135deg, var(--pale-pink), var(--light-pink)); border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; display: flex; align-items: center; justify-content: center; box-shadow: 0 20px 60px rgba(255, 107, 157, 0.3);">
+                            <i class="bi bi-balloon-heart-fill" style="font-size: 8rem; color: var(--primary-pink); opacity: 0.8;"></i>
+                        </div>
+                        <!-- Floating elements -->
+                        <div class="position-absolute" style="top: 10%; right: 10%; animation: float 4s ease-in-out infinite;">
+                            <i class="bi bi-cake2-fill text-warning" style="font-size: 3rem;"></i>
+                        </div>
+                        <div class="position-absolute" style="bottom: 20%; left: 5%; animation: float 5s ease-in-out infinite reverse;">
+                            <i class="bi bi-cup-hot-fill" style="font-size: 2.5rem; color: var(--secondary-pink);"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
   <!-- Esta es la sección donde se van a visualizar los productos  -->
   <section>
@@ -121,7 +171,7 @@
               </button>
               <button>
                 <h4 class="mb-0 fw-bold" id="currentMonthYear">Abril 2026</h4>
-              </button>
+              </button>3
               <button class="btn btn-sm btn-outline-secondary" onclick="changeMonth(1)">
                 <i class="bi bi-chevron-right"></i>
               </button>
